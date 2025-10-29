@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+    <class>ServerWindow</class>
+    <widget class="QMainWindow" name="ServerWindow">
+        <property name="geometry">
+            <rect>
+                <x>0</x>
+                <y>0</y>
+                <width>800</width>
+                <height>600</height>
+            </rect>
+        </property>
+        <property name="windowTitle">
+            <string>ServerWindow</string>
+        </property>
+        <widget class="QWidget" name="centralwidget">
+            <layout class="QVBoxLayout" name="verticalLayout">
+                <item>
+                    <widget class="QGroupBox" name="groupBox">
+                        <property name="title">
+                            <string>All Messages (Public and Private)</string>
+                        </property>
+                        <layout class="QVBoxLayout" name="verticalLayout_2">
+                            <item>
+                                <widget class="QTextBrowser" name="allMessagesBrowser"/>
+                            </item>
+                        </layout>
+                    </widget>
+                </item>
+                <item>
+                    <widget class="QGroupBox" name="groupBox_2">
+                        <property name="title">
+                            <string>User Management</string>
+                        </property>
+                        <layout class="QVBoxLayout" name="verticalLayout_3">
+                            <item>
+                                <widget class="QListWidget" name="userListWidget"/>
+                            </item>
+                            <item>
+                                <layout class="QHBoxLayout" name="horizontalLayout">
+                                    <item>
+                                        <widget class="QPushButton" name="banUserButton">
+                                            <property name="text">
+                                                <string>Ban User</string>
+                                            </property>
+                                        </widget>
+                                    </item>
+                                    <item>
+                                        <widget class="QPushButton" name="unbanUserButton">
+                                            <property name="text">
+                                                <string>Unban User</string>
+                                            </property>
+                                        </widget>
+                                    </item>
+                                    <item>
+                                        <widget class="QPushButton" name="refreshButton">
+                                            <property name="text">
+                                                <string>Manual Refresh</string>
+                                            </property>
+                                        </widget>
+                                    </item>
+                                </layout>
+                            </item>
+                        </layout>
+                    </widget>
+                </item>
+            </layout>
+        </widget>
+        <widget class="QMenuBar" name="menubar">
+            <property name="geometry">
+                <rect>
+                    <x>0</x>
+                    <y>0</y>
+                    <width>800</width>
+                    <height>21</height>
+                </rect>
+            </property>
+        </widget>
+        <widget class="QStatusBar" name="statusbar"/>
+    </widget>
+    <resources/>
+    <connections/>
+</ui>
